@@ -13,3 +13,6 @@ A simple calculator implemented in React.
 ## Description
 
 This is a basic calculator that can be used to perform simple mathematical operations. It was developed using React and includes features such as addition, subtraction, multiplication and division.
+
+Disponivel em:
+https://reactcalcleolator.netlify.app/
