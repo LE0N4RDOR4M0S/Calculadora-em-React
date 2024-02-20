@@ -1,0 +1,39 @@
+body{
+  background-color: #FFF;
+}
+
+.container{
+  width: 500px;
+  height: 600px;
+  background-color: #07143F;
+  display: flex;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.content{
+  background-color: #091f64;
+  width: 350px;
+  height: 150px;
+  margin-top: 30px;
+  border-radius: 15px;
+  padding: 10px 50px;
+  align-items: center;
+  display: flex;
+}
+
+.terminal{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 70px;
+  width: 100%;
+}
+
+.classmth{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
