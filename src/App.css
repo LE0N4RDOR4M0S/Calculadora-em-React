@@ -1,39 +1,78 @@
 body{
-  background-color: #FFF;
+  background-color: #05161A;
 }
 
-.container{
-  width: 500px;
-  height: 600px;
-  background-color: #07143F;
-  display: flex;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
+.rodape{
+  color: white;
+  font-size: 18px;
+  margin-top: none;
+  
 }
 
-.content{
-  background-color: #091f64;
-  width: 350px;
-  height: 150px;
-  margin-top: 30px;
-  border-radius: 15px;
-  padding: 10px 50px;
-  align-items: center;
-  display: flex;
+.calculator {
+  width: 440px;
+  margin: 0 auto;
+  border: 1px solid;
+  border-color: #072E33;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #072E33;
+  position: relative;
 }
 
-.terminal{
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  height: 70px;
-  width: 100%;
+.calculator input[type="text"] {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 16px;
+  background-color: #084b54;
+  border-color: none;
+  border-radius: 10px;
+  color: white;
 }
 
-.classmth{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 100%;
+.calculator div {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.calculator div:hover {
+  background-color: #e0e0e0;
+}
+
+.calculator div:active {
+  background-color: #d0d0d0;
+}
+
+.equals{
+  background-color: #F1916D;
+  width: 93%;
+  font-size: large;
+}
+
+.number{
+  background-color: #6DA5C0;
+  border-color: #6DA5C0;
+  color: white;
+  width: calc(20% - 10px);
+}
+
+.C{
+  background-color: #b82c2c;
+  border-color: #b82c2c;
+  color: white;
+  width: calc(20% - 10px);
+}
+
+.operator{
+  background-color: #294D61;
+  color: white;
+  width: calc(20% - 10px);
 }

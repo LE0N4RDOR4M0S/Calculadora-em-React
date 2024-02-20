@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
+import './App.css';
 
 function Calculator() {
   const [currentNumber, setCurrentNumber] = useState('');
@@ -38,29 +39,32 @@ function Calculator() {
   };
 
   return (
-    <div className="calculator">
-      <input type="text" value={currentNumber} readOnly />
-      <div onClick={() => appendNumber('7')}>7</div>
-      <div onClick={() => appendNumber('8')}>8</div>
-      <div onClick={() => appendNumber('9')}>9</div>
-      <div onClick={() => setOperatorHandler('/')}>/</div>
-
-      <div onClick={() => appendNumber('4')}>4</div>
-      <div onClick={() => appendNumber('5')}>5</div>
-      <div onClick={() => appendNumber('6')}>6</div>
-      <div onClick={() => setOperatorHandler('*')}>*</div>
-
-      <div onClick={() => appendNumber('1')}>1</div>
-      <div onClick={() => appendNumber('2')}>2</div>
-      <div onClick={() => appendNumber('3')}>3</div>
-      <div onClick={() => setOperatorHandler('-')}>-</div>
-
-      <div onClick={() => appendNumber('0')}>0</div>
-      <div onClick={clearDisplay}>C</div>
-      <div onClick={calculateResult}>=</div>
-      <div onClick={() => setOperatorHandler('+')}>+</div>
-
-      <div onClick={appendDecimal}>.</div>
+    <div>
+      <div className="calculator">
+        <input type="text" value={currentNumber} readOnly />
+        <div className='number' onClick={() => appendNumber('7')}>7</div>
+        <div className='number' onClick={() => appendNumber('8')}>8</div>
+        <div className='number' onClick={() => appendNumber('9')}>9</div>
+        <div className='C' onClick={clearDisplay}>C</div>
+        <div className='number' onClick={() => appendNumber('4')}>4</div>
+        <div className='number' onClick={() => appendNumber('5')}>5</div>
+        <div className='number' onClick={() => appendNumber('6')}>6</div>
+        <div className='operator' onClick={() => setOperatorHandler('/')}>/</div>
+        <div className='number' onClick={() => appendNumber('1')}>1</div>
+        <div className='number' onClick={() => appendNumber('2')}>2</div>
+        <div className='number' onClick={() => appendNumber('3')}>3</div>
+        <div className='operator' onClick={() => setOperatorHandler('*')}>x</div>
+        <div className='number' onClick={() => appendNumber('0')}>0</div>
+        <div className='number' onClick={appendDecimal}>.</div>
+        <div className='operator' onClick={() => setOperatorHandler('-')}>-</div>
+        <div className='operator' onClick={() => setOperatorHandler('+')}>+</div>
+        <div className='equals' onClick={calculateResult}>=</div>
+      </div>
+      <div className='rodape'>
+        <p>Criado, desenvolvido e implementado por Leonardo de Oliveira Ramos.</p>
+        <p>E-mail: leoolivramos@gmail.com</p>
+        <p>Linkedin: https://www.linkedin.com/in/leonardo-de-oliveira-ramos-690318270/</p>
+      </div>
     </div>
   );
 }
